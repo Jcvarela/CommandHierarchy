@@ -2,13 +2,13 @@ package command;
 
 import Unit.Unit;
 import command.Interface.Command;
-import command.Interface.IsAUnit;
+import command.Interface.UnitCommands;
 
 public class HealCommand implements Command {
-    private IsAUnit object;
+    private UnitCommands object;
     private Unit target;
 
-    public HealCommand(IsAUnit o, Unit t){
+    public HealCommand(UnitCommands o, Unit t){
         object = o;
         target = t;
     }

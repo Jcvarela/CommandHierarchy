@@ -2,15 +2,15 @@ package command;
 
 import Unit.Unit;
 import command.Interface.Command;
-import command.Interface.IsAUnit;
+import command.Interface.UnitCommands;
 
 public class AttackCommand implements Command {
 
-    private IsAUnit object;
+    private UnitCommands object;
     private Unit Target;
 
 
-    public AttackCommand(IsAUnit o, Unit p){
+    public AttackCommand(UnitCommands o, Unit p){
         object = o;
         Target = p;
     }

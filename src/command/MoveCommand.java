@@ -1,16 +1,16 @@
 package command;
 
 import command.Interface.Command;
-import command.Interface.IsAUnit;
+import command.Interface.UnitCommands;
 
 import java.awt.geom.Point2D;
 
 public class MoveCommand implements Command {
 
-    private IsAUnit object;
+    private UnitCommands object;
     private Point2D location;
 
-    public MoveCommand(IsAUnit o, Point2D p){
+    public MoveCommand(UnitCommands o, Point2D p){
         object = o;
         location = p;
     }
